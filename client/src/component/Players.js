@@ -2,14 +2,16 @@ import React from 'react';
 
 import PlayerCard from './PlayerCard';
 
+import { Container } from 'reactstrap';
+
 const Players = props => {
 
 	return (
-		<div className='players'>
+		<Container className='players'>
 			{props.players.map(player => (
 				<PlayerCard player={player} />
 			))}
-		</div>
+		</Container>
 	)
 };
 

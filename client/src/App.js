@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Players from './component/Players';
+import Header from './component/Header';
 
 class App extends Component {
   constructor() {
@@ -27,6 +28,7 @@ class App extends Component {
   render() {
     return (
        <div className='App'>
+          <Header />
          <Players players={this.state.players} />
        </div>
     );

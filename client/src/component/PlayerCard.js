@@ -1,16 +1,21 @@
 import React from 'react';
 
+import { Card, CardBody, CardTitle, ListGroup, ListGroupItem } from 'reactstrap';
+
 const PlayerCard = props => {
 
 	return (
-		<div className='player' key={props.player.id}>
-			<h3>{props.player.name}</h3>
-			<ul>
-				<li>id: {props.player.id}</li>
-				<li>Country: {props.player.country}</li>
-				<li>Searches: {props.player.searches}</li>
-			</ul>
-		</div>
+		<Card className='player' key={props.player.id}>
+			<CardTitle>{props.player.name}</CardTitle>
+			<CardBody>
+				<ListGroup>
+					<ListGroupItem>id: {props.player.id}</ListGroupItem>
+					<ListGroupItem>Country: {props.player.country}</ListGroupItem>
+					<ListGroupItem>Searches: {props.player.searches}</ListGroupItem>
+				</ListGroup>
+			</CardBody>
+
+		</Card>
 	)
 };
 
