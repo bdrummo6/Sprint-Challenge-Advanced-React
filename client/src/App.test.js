@@ -28,3 +28,5 @@ test('if dark mode button toggles Dark Mode ', () => {
   // Assert
   expect(darkModeBtn.textContent).toBe('Dark Mode');
 });
+
+

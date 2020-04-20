@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-import './styles.scss';
+import './styles.css';
 
 import Players from './component/Players';
 import Header from './component/Header';
+import PlayerGraph from "./component/PlayerGraph";
 
 class App extends Component {
   constructor() {
@@ -36,11 +37,11 @@ class App extends Component {
     return (
        <div className='App' style={appStyles}>
           <Header />
+          <PlayerGraph players={this.state.players} />
           <Players players={this.state.players} />
        </div>
     );
   }
-
 }
 
 export default App;
