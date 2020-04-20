@@ -10,8 +10,3 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
-
-test ('if darkmode functions', () => {
-  const container = render(<App />);
-  container.getByTestId(/darkmode/i);
-})
