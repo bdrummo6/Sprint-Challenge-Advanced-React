@@ -29,7 +29,8 @@ class App extends Component {
     const appStyles = {
        width: '100%',
        display: 'flex',
-       flexDirection: 'column'
+       flexDirection: 'column',
+       textAlign: 'center'
     };
 
     return (
