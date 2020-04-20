@@ -11,7 +11,7 @@ const Header = () => {
 	}
 
 	return (
-		<header className='header'>
+		<header className='header' data-testid='heading'>
 			<h1>Soccer Players from Around the World</h1>
 			<div>
 				<button className='darkModeBtn' onClick={toggle}>Dark Mode</button>
