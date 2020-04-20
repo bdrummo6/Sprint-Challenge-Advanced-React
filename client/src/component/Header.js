@@ -15,9 +15,6 @@ const Header = () => {
 			<h1>Soccer Players from Around the World</h1>
 			<div>
 				<button className='darkModeBtn' onClick={toggle} data-testid='darkmode'>Dark Mode</button>
-				<div style={{ display: 'none' }} data-testid='darkModeOn'>
-					{darkMode ? <p>Dark Mode On</p> : <p>Dark Mode Off</p>}
-				</div>
 			</div>
 		</header>
 	)
