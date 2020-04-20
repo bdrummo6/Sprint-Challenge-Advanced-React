@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log('Component Mounted!');
+    // console.log('Component Mounted!');
 
     fetch('http://localhost:5000/api/players')
        .then(results => results.json())
