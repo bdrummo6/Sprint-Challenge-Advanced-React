@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import './App.css';
+import './App.css'
+import './styles.scss';
 
 import Players from './component/Players';
 import Header from './component/Header';
@@ -26,14 +27,19 @@ class App extends Component {
   }
 
   render() {
+    const appStyles = {
+       width: '100%',
+       display: 'flex',
+       flexDirection: 'column'
+    };
+
     return (
-       <div className='App'>
+       <div className='App' style={appStyles}>
           <Header />
-         <Players players={this.state.players} />
+          <Players players={this.state.players} />
        </div>
     );
   }
-
 
 }
 
