@@ -8,12 +8,12 @@ const PlayerGraph = props => {
 
 	return (
 		<Container id='graph-container'>
-			<h4>Number of Searches by Player</h4>
+			<h4 style={{ marginTop: '10px' }}>Number of Searches by Player</h4>
 			<LineChart
 				width={900}
 				height={450}
 				data={props.players}
-				margin={{ top: 10, right: 10, left: 5, bottom: 10 }}
+				margin={{ top: 10, right: 10, left: 10, bottom: 10 }}
 			>
 				<CartesianGrid strokeDasharray="50 50" />
 				<XAxis dataKey="name" tick={false} reversed={true} />
@@ -23,7 +23,7 @@ const PlayerGraph = props => {
 					orientation='right'
 					label={{ value: "# of Searches", offset: 0, angle: -90, position: 'right', fontWeight: 'bold' }} />
 				<Tooltip />
-				<Legend verticalAlign='top' />
+				<Legend />
 				<Line type="monotone" dataKey="searches" stroke="#252727" strokeWidth='1.5px'/>
 			</LineChart>
 		</Container>

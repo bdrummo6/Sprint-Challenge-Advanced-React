@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import './styles.css';
-
 import Players from './component/Players';
 import Header from './component/Header';
 import PlayerGraph from "./component/PlayerGraph";
@@ -27,6 +25,8 @@ class App extends Component {
   }
 
   render() {
+    document.title = 'Top Soccer Players';
+
     const appStyles = {
        width: '100%',
        display: 'flex',

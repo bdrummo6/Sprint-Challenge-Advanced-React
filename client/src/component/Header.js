@@ -20,7 +20,7 @@ const Header = () => {
 	return (
 		<header className='header'>
 			<h1>Soccer Players from Around the World</h1>
-			<div>
+			<div className='mode-buttons'>
 				<button className='modeBtn' onClick={toggle} data-testid='darkmode'>
 					{darkMode ? <span>Light Mode</span> : <span>Dark Mode</span>}
 				</button>

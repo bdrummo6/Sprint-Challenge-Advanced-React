@@ -4,18 +4,19 @@ import { Card, CardBody, CardTitle, ListGroup, ListGroupItem } from 'reactstrap'
 
 const PlayerCard = props => {
 	const playerStyles = {
+		fontFamily: 'Offside, sans-serif',
 		color: '#252727',
-		width: '31%',
-		margin: '5px 1% 10px 1%',
+		width: '32%',
+		margin: '5px 0.5% 10px 0.5%',
+	};
+
+	const nameStyles = {
+		fontWeight: 'bold',
 	};
 
 	const valueStyles = {
 		fontWeight: 'bold',
 		marginLeft: '4px'
-	};
-
-	const nameStyles = {
-		fontWeight: 'bold',
 	};
 
 	return (
