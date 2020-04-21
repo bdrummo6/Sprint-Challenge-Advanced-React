@@ -1,14 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import { render, fireEvent } from '@testing-library/react';
 
 import App from './App';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  render(<App />);
 });
 
 test('if dark mode button toggles Dark Mode ', () => {
@@ -29,4 +26,20 @@ test('if dark mode button toggles Dark Mode ', () => {
   expect(darkModeBtn.textContent).toBe('Dark Mode');
 });
 
+test('if graph mode button toggles the graph ', () => {
+  // Arrange
+  const { getByTestId} = render(<App />);
 
+  // Act
+  const graphModeBtn = getByTestId(/graphmode/i);
+  fireEvent.click(graphModeBtn);
+
+  // Assert
+  expect(graphModeBtn.textContent).toBe('Hide Graph');
+
+  // Act
+  fireEvent.click(graphModeBtn);
+
+  // Assert
+  expect(graphModeBtn.textContent).toBe('Show Graph');
+});

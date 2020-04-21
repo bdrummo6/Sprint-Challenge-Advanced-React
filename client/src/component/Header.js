@@ -21,10 +21,10 @@ const Header = () => {
 		<header className='header'>
 			<h1>Soccer Players from Around the World</h1>
 			<div>
-				<button className='darkModeBtn' onClick={toggle} data-testid='darkmode'>
+				<button className='modeBtn' onClick={toggle} data-testid='darkmode'>
 					{darkMode ? <span>Light Mode</span> : <span>Dark Mode</span>}
 				</button>
-				<button className='darkModeBtn' style={{ marginLeft: '10px'}} onClick={toggleGraph}>
+				<button className='modeBtn' style={{ marginLeft: '10px'}} onClick={toggleGraph} data-testid='graphmode'>
 					{graphMode ? <span>Hide Graph</span> : <span>Show Graph</span>}
 				</button>
 			</div>

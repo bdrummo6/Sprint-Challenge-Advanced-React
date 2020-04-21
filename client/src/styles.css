@@ -8,7 +8,7 @@
   margin-bottom: 20px;
 }
 
-.darkModeBtn {
+.modeBtn {
   align-self: center;
   font-weight: bold;
   background: #FFFFFF;
@@ -37,7 +37,7 @@
   border-bottom: 2px solid #FFFFFF;
 }
 
-.dark-mode .darkModeBtn {
+.dark-mode .modeBtn {
   background: #252727;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
