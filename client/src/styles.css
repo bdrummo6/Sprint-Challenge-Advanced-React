@@ -1,0 +1,55 @@
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  font-family: 'Offside', sans-serif;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  color: #252727;
+  border-bottom: 2px solid #252727;
+  margin: 20px 0 25px 0;
+}
+
+.mode-buttons {
+  margin-top: 5px;
+}
+
+.modeBtn {
+  align-self: center;
+  font-weight: bold;
+  background: #FFFFFF;
+  color: #252727;
+  border: 2px solid #252727;
+}
+
+#graph-container {
+  display: flex;
+  font-family: 'Offside', sans-serif;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  color: #252727;
+  background: #FFFFFF;
+}
+
+.dark-mode {
+  color: #FFFFFF;
+  background: #252727;
+}
+
+.dark-mode .header {
+  color: #FFFFFF;
+  background: #252727;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.dark-mode .modeBtn {
+  background: #252727;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
